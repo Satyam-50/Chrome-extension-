@@ -1,45 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>YouTube Timestamp Bookmarker</title>
-    <style>
-        body {
-            font-family: Arial;
-            background: #0f172a;
-            color: white;
-            text-align: center;
-            padding: 60px;
-        }
-        h1 { font-size: 40px; }
-        p { font-size: 18px; color: #cbd5e1; }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 20px;
-            background: red;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            margin: 20px auto;
-            width: 400px;
-            border-radius: 12px;
-        }
-        .download {
-    background: #ff0000;
-    margin-top: 15px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Timestamp Bookmarker</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+        margin: 0;
     }
 
-    </style>
+    h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #cbd5e1;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        background: #1e293b;
+        padding: 25px;
+        margin: 20px auto;
+        max-width: 450px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .card h3 {
+        margin-bottom: 15px;
+    }
+
+    .card p {
+        margin: 8px 0;
+        font-size: 16px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin: 15px 10px 0;
+        padding: 12px 22px;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+
+    .github-btn {
+        background: #2563eb;
+    }
+
+    .github-btn:hover {
+        background: #1d4ed8;
+    }
+
+    .download-btn {
+        background: #22c55e;
+    }
+
+    .download-btn:hover {
+        background: #16a34a;
+    }
+
+    footer {
+        margin-top: 50px;
+        font-size: 14px;
+        color: #64748b;
+    }
+</style>
 </head>
+
 <body>
 
 <h1>🎬 YouTube Timestamp Bookmarker</h1>
-<p>Bookmark, watch and share exact YouTube timestamps.</p>
+<p>Bookmark, watch and share exact YouTube timestamps instantly.</p>
 
 <div class="card">
     <h3>✨ Features</h3>
@@ -49,13 +92,20 @@
     <p>✔ Delete bookmarks</p>
 </div>
 
-<a class="btn" href="https://github.com/Satyam-50/Chrome-extension-">
-    View on GitHub
+<a class="btn github-btn"
+   href="https://github.com/Satyam-50/Chrome-extension-"
+   target="_blank">
+   View on GitHub
 </a>
-<a class="btn download" 
+
+<a class="btn download-btn"
    href="https://github.com/Satyam-50/Chrome-extension-/archive/refs/heads/main.zip">
    Download Extension
 </a>
+
+<footer>
+    Made with ❤️ by Satyam Vishwakarma
+</footer>
 
 </body>
 </html>
